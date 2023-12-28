@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "prepush": "rm -rf ./dist && parcel build ./src/index.html"
+   "predeploy": "rm -rf dist && parcel build src/index.html --no-source-maps --public-url ./",
+   "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "parcel": "^2.10.3",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.4.0"
