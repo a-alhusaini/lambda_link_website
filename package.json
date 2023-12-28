@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-   "predeploy": "parcel build src/index.html --no-source-maps --public-url 'https://a-alhusaini.github.io/lambda_link_website/dist/'",
+   "predeploy": "parcel build src/index.html --no-source-maps --public-url 'https://a-alhusaini.github.io/lambda_link_website/'",
    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
